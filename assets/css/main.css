@@ -4751,7 +4751,7 @@ sub, sup {
 }
 
 .expertise-card:hover {
-  border: 1px solid #1a222c; /* soft gray */
+  border: 1px solid #d1d3d5; /* soft blue gray */
   background: rgba(167, 139, 250, 0.05);
   box-shadow: none;
 }
