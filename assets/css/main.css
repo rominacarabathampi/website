@@ -4762,3 +4762,48 @@ sub, sup {
     grid-template-columns: repeat(1, minmax(0, 1fr)); /* mobile single column */
   }
 }
+
+/* =========================
+   HEADER ICONS
+========================= */
+
+.header-icons {
+  margin-top: 20px;
+}
+
+.header-icons a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.header-icons .icon {
+  font-size: 1.6rem;
+  color: #94a3b8;
+  transition: all 0.25s ease;
+}
+
+/* Hover glow effect */
+.header-icons .icon:hover {
+  color: #38bdf8;
+  transform: translateY(-3px) scale(1.1);
+}
+
+/* Individual brand vibes */
+.header-icons a:nth-child(1) .icon:hover { color: #f87171; } /* email */
+.header-icons a:nth-child(2) .icon:hover { color: #e2e8f0; } /* github */
+.header-icons a:nth-child(3) .icon:hover { color: #60a5fa; } /* linkedin */
+.header-icons a:nth-child(4) .icon:hover { color: #f472b6; } /* instagram */
+.header-icons a:nth-child(5) .icon:hover { color: #38bdf8; } /* twitter/x */
+
+/* Down arrow animation */
+.down .icon {
+  margin-top: 40px;
+  font-size: 1.5rem;
+  color: #94a3b8;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
